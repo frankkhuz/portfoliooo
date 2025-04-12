@@ -9,6 +9,13 @@ import { MyLink, Nav } from "../../styles/NavStyle";
 const Navbar = () => {
   const { dispatch } = useContext(PortfolioContext);
 
+  const headingStyle = {
+    textAlign: "center",
+    color: "white",
+    fontSize: "2rem",
+    animation: "fadeInZoom 2s ease-in-out infinite alternate",
+  };
+
   return (
     <Nav>
       <h1 className="myIntials">
@@ -22,11 +29,23 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <h1
-              style={{ textAlign: "center", color: "blueviolet", font: "1rem" }}
-            >
-              F
-            </h1>
+            <style
+              dangerouslySetInnerHTML={{
+                __html: `
+            @keyframes fadeInZoom {
+              0% {
+                opacity: 0;
+                transform: scale(0.8);
+              }
+              100% {
+                opacity: 1;
+                transform: scale(1.2);
+              }
+            }
+          `,
+              }}
+            />
+            <h1 style={headingStyle}>F</h1>
             {/* DA */}
           </header>
         </NavLink>
