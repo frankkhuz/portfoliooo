@@ -11,9 +11,9 @@ import { AboutMe } from "../styles/AboutStyle";
 import { AboutAniebo } from "../styles/HomeStyle";
 
 const About = () => {
-  // Link to resume on google drive
+  // Link to resume on google docs
   const url =
-    "https://docs.google.com/document/d/15RDpV_W0qUYCkKPd6ArA2nWMSkKBphRUO0LAM1G1hDU/edit?usp=sharing";
+    "https://docs.google.com/document/d/1ikL9Tt1gO2N30OzJ_MpIPJOHsiqZUztlPsYP6H71dko/edit?usp=sharing";
 
   const downloadResume = () => {
     window.open(url, "_blank");
