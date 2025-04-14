@@ -12,7 +12,8 @@ import { AboutAniebo } from "../styles/HomeStyle";
 
 const About = () => {
   // Link to resume on google
-  const url = "";
+  const url =
+    "https://docs.google.com/document/d/1WK-e77JXnvLUggz0WbRUYgBs_qilgY3IR0BZl3IkOrU/edit?usp=sharing";
 
   const downloadResume = () => {
     window.open(url, "_blank");
